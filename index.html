@@ -1,0 +1,713 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>OMTAMIL DEMO APPS</title>
+	<link rel="stylesheet"  href="css/jquery.mobile.min.css">
+	<style>
+		#homeBanner {
+			width: 100%;
+		}
+		.center {
+			text-align: center;
+			margin-left: auto;
+			margin-right:auto;
+		}
+		.banner {
+			display:block;
+			width: 100%;
+		}
+		#qrcode {
+			display:block;	
+			margin-left: auto;
+			margin-right:auto;
+		}
+		#map2 {
+			margin-left: auto;
+			margin-right:auto;
+			width: 320px;
+			height: 320px;  
+	
+		
+	</style>
+	
+	
+	
+	<link rel="stylesheet" href="css/leaflet.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.min.js"></script>
+	
+
+
+</head>
+	
+<body>
+
+
+
+
+
+
+<div id="homeScreen" data-role="page">
+	<img src="imgs/fafa14.jpg"="banner" />
+	<div data-role="content">
+	
+	
+	<!-- header -->
+
+   <!-- content -->
+	
+	
+	
+	
+	<ul data-role="listview"  data-filter="true" data-inset="true" class="ui-nodisc-icon ui-alt-icon" data-filter-placeholder="தேடுக Search">
+
+				<li><a href="#kural"><img src="imgs/images.jpg">
+				<h4>திருக்குறள் </h4>
+				<p>Thirukkural</p></a>
+			</li>
+
+					
+			
+					<li><a href="http://omtamil.tv"><img src="imgs/download.jpg">
+				<h2>ஓம்தமிழ்</h2>
+				<p> OMTAMIL.TV</p></a>
+			</li>
+			
+		</ul>
+
+	
+		<div class="ui-grid-a center">
+    		<div class="ui-block-a">
+				<a href="#aboutScreen" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a>
+			</div>
+    		<div class="ui-block-b">
+				<a href="#mapScreen" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Map</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="kural" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<h3 class="center"> திருவள்ளுவரின் திருக்குறள் <br> Thirukkural by Thiruvalluvar</h3>
+		
+		<ol data-role="listview"  data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+		
+		
+		  <div data-role="collapsible" data-theme="a" data-expanded-icon="flat-cross" data-mini="true">
+           <h3>1. இறை வணக்கம்</h3>
+           <ul data-role="listview" data-filter="false">
+            <li data-theme="b">
+             <a href="#"><small>ஒப்பற்ற நல்லியல்புகளைக் கொண்டவர் வழியில் நடத்தல்</small>
+             </a>
+            </li>
+
+            <li>
+             <a href="1.html#kural1" rel="external"><p class="listKural"><img src="imgs/video.gif" class="ui-li-icon ui-corner-none">அகர முதல எழுத்தெல்லாம் ஆதி
+               <br>பகவன் முதற்றே உலகு</p> <span class="ui-li-count">1</span>
+             </a>
+            </li>
+            <li>
+             <a href="1.html#kural2" rel="external"><p class="listKural"><img src="imgs/video.gif" class="ui-li-icon ui-corner-none">கற்றதனால் ஆய பயனென்கொல் வாலறிவன்
+               <br>நற்றாள் தொழாஅர் எனின்</p> <span class="ui-li-count">2</span>
+             </a>
+            </li>
+            <li>
+             <a href="1.html#kural3" rel="external"><p class="listKural"><img src="imgs/video.gif" class="ui-li-icon ui-corner-none">மலர்மிசை ஏகினான் மாணடி சேர்ந்தார்
+               <br>நிலமிசை நீடுவாழ் வார்</p> <span class="ui-li-count">3</span>
+             </a>
+            </li>
+            <li>
+             <a href="1.html#kural4" rel="external"><p class="listKural"><img src="imgs/video.gif" class="ui-li-icon ui-corner-none">வேண்டுதல்வேண் டாமை இலானடி சேர்ந்தார்க்கு
+               <br>யாண்டும் இடும்பை இல</p> <span class="ui-li-count">4</span>
+             </a>
+            </li>
+            <li>
+             <a href="1.html#kural5" rel="external"><p class="listKural"><img src="imgs/video.gif" class="ui-li-icon ui-corner-none">இருள்சேர் இருவினையும் சேரா இறைவன்
+               <br>பொருள்சேர் புகழ்புரிந்தார் மாட்டு</p> <span class="ui-li-count">5</span>
+             </a>
+            </li>
+            <li>
+             <a href="1.html#kural6" rel="external"><p class="listKural"><img src="imgs/video.gif" class="ui-li-icon ui-corner-none">பொறிவாயில் ஐந்தவித்தான் பொய்தீர் ஒழுக்க
+               <br>நெறிநின்றார் நீடுவாழ் வார்</p> <span class="ui-li-count">6</span>
+             </a>
+            </li>
+            <li>
+             <a href="1.html#kural7" rel="external"><p class="listKural"><img src="imgs/video.gif" class="ui-li-icon ui-corner-none">தனக்குவமை இல்லாதான் தாள்சேர்ந்தார்க் கல்லால்
+               <br>மனக்கவலை மாற்றல் அரிது</p> <span class="ui-li-count">7</span>
+             </a>
+            </li>
+            <li>
+             <a href="1.html#kural8" rel="external"><p class="listKural"><img src="imgs/video.gif" class="ui-li-icon ui-corner-none">அறவாழி அந்தணன் தாள்சேர்ந்தார்க் கல்லால்
+               <br>பிறவாழி நீந்தல் அரிது</p> <span class="ui-li-count">8</span>
+             </a>
+            </li>
+            <li>
+             <a href="1.html#kural9" rel="external"><p class="listKural"><img src="imgs/video.gif" class="ui-li-icon ui-corner-none">கோளில் பொறியில் குணமிலவே எண்குணத்தான்
+               <br>தாளை வணங்காத் தலை</p> <span class="ui-li-count">9</span>
+             </a>
+            </li>
+            <li>
+             <a href="1.html#kural10" rel="external"><p class="listKural"><img src="imgs/video.gif" class="ui-li-icon ui-corner-none">பிறவிப் பெருங்கடல் நீந்துவர் நீந்தார்
+               <br>இறைவன் அடிசேரா தார்</p> <span class="ui-li-count">10</span>
+             </a>
+            </li>
+            <li>
+           </ul>
+          </div>
+		  
+		  
+		  
+		   <div data-role="collapsible" data-theme="a" data-expanded-icon="flat-cross" data-mini="true">
+           <h3>2. வான் சிறப்பு</h3>
+           <ul data-role="listview" data-filter="false">
+		     <li data-theme="b">
+             <a href="2.html#chapter2" rel="external"><small>மழையின் சிறப்பு</small>
+             </a>
+            </li>
+            <li> <a href="2.html#kural11" rel="external"><p class="listKural">வான்நின்று உலகம் வழங்கி வருதலால்
+               <br>தான்அமிழ்தம் என்றுணரற் பாற்று</p> <span class="ui-li-count">11</span>
+             </a>
+            </li>
+            <li> <a href="2.html#kural12" rel="external"><p class="listKural">துப்பார்க்குத் துப்பாய துப்பாக்கித் துப்பார்க்குத்
+               <br>துப்பாய தூஉம் மழை</p> <span class="ui-li-count">12</span>
+             </a>
+            </li>
+            <li> <a href="2.html#kural13" rel="external"><p class="listKural">விண்இன்று பொய்ப்பின் விரிநீர் வியனுலகத்து
+               <br>உள்நின்று உடற்றும் பசி</p> <span class="ui-li-count">13</span>
+             </a>
+            </li>
+            <li><a href="2.html#kural14" rel="external"><p class="listKural">ஏரின் உழாஅர் உழவர் புயல்என்னும்
+               <br>வாரி வளங்குன்றிக் கால்</p> <span class="ui-li-count">14</span>
+             </a>
+            </li>
+            <li> <a href="2.html#kural15" rel="external"><p class="listKural">கெடுப்பதூஉம் கெட்டார்க்குச் சார்வாய்மற் றாங்கே
+               <br>எடுப்பதூஉம் எல்லாம் மழை</p> <span class="ui-li-count">15</span>
+             </a>
+            </li>
+            <li> <a href="2.html#kural16" rel="external"><p class="listKural">விசும்பின் துளிவீழின் அல்லால்மற் றாங்கே
+               <br>பசும்புல் தலைகாண்பு அரிது</p> <span class="ui-li-count">16</span>
+             </a>
+            </li>
+            <li> <a href="2.html#kural17" rel="external"><p class="listKural">நெடுங்கடலும் தன்நீர்மை குன்றும் தடிந்தெழிலி
+               <br>தான்நல்கா தாகி விடின்</p> <span class="ui-li-count">17</span>
+             </a>
+            </li>
+            <li><a href="2.html#kural18" rel="external"><p class="listKural">சிறப்பொடு பூசனை செல்லாது வானம்
+               <br>வறக்குமேல் வானோர்க்கும் ஈண்டு</p> <span class="ui-li-count">18</span>
+             </a>
+            </li>
+            <li><a href="2.html#kural19" rel="external"><p class="listKural">தானம் தவம்இரண்டும் தங்கா வியன்உலகம்
+               <br>வானம் வழங்கா தெனின்</p> <span class="ui-li-count">19</span>
+             </a>
+            </li>
+            <li> <a href="2.html#kural20" rel="external"><p class="listKural">நீர்இன்று அமையாது உலகெனின் யார்யார்க்கும்
+               <br>வான்இன்று அமையாது ஒழுக்கு</p> <span class="ui-li-count">20</span>
+             </a>
+            </li>
+           </ul>
+          </div>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+
+</ol>
+	</div>
+</div>
+
+	
+
+
+<div id="list1" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Read-only, unordered List</h1>
+<ul data-role="listview">
+    <li>Acura</li>
+    <li>Audi</li>
+    <li>BMW</li>
+    <li>Cadillac</li>
+    <li>Ferrari</li>
+</ul>
+
+<h1 class="center">Read-only, ordered List</h1>
+<ol data-role="listview">
+    <li>Acura</li>
+    <li>Audi</li>
+    <li>BMW</li>
+    <li>Cadillac</li>
+    <li>Ferrari</li>
+</ol>
+
+	</div>
+</div>
+
+
+
+
+
+<div id="list4" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Autodividers List</h1>
+		<ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
+    <li><a href="index.html">Adam Kinkaid</a></li>
+    <li><a href="index.html">Alex Wickerham</a></li>
+    <li><a href="index.html">Avery Johnson</a></li>
+    <li><a href="index.html">Bob Cabot</a></li>
+    <li><a href="index.html">Caleb Booth</a></li>
+    <li><a href="index.html">Christopher Adams</a></li>
+    <li><a href="index.html">Culver James</a></li>
+</ul>
+	</div>
+</div>
+
+
+<div id="list5" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Formatted Content List</h1>
+<ul data-role="listview" data-inset="true">
+    <li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
+    <li><a href="index.html">
+    <h2>Stephen Weber</h2>
+    <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+    <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+        <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+    </a></li>
+    <li><a href="index.html">
+    <h2>jQuery Team</h2>
+    <p><strong>Boston Conference Planning</strong></p>
+    <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+        <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+    </a></li>
+    <li data-role="list-divider">Thursday, October 7, 2010 <span class="ui-li-count">1</span></li>
+    <li><a href="index.html">
+    <h2>Avery Walker</h2>
+    <p><strong>Re: Dinner Tonight</strong></p>
+    <p>Sure, let's plan on meeting at Highland Kitchen at 8:00 tonight. Can't wait!</p>
+        <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+    </a></li>
+</ul>
+	</div>
+</div>
+
+
+<div id="list6" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Form</h1>
+<form>
+    <ul data-role="listview" data-inset="true">
+        <li class="ui-field-contain">
+            <label for="name2">Text Input:</label>
+            <input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+        </li>
+        <li class="ui-field-contain">
+            <label for="textarea2">Textarea:</label>
+        <textarea cols="40" rows="8" name="textarea2" id="textarea2"></textarea>
+        </li>
+        <li class="ui-field-contain">
+            <label for="flip2">Flip switch:</label>
+            <select name="flip2" id="flip2" data-role="slider">
+                <option value="off">Off</option>
+                <option value="on">On</option>
+            </select>
+        </li>
+        <li class="ui-field-contain">
+            <label for="slider2">Slider:</label>
+            <input type="range" name="slider2" id="slider2" value="0" min="0" max="100" data-highlight="true">
+        </li>
+        <li class="ui-field-contain">
+            <label for="select-choice-1" class="select">Choose shipping method:</label>
+            <select name="select-choice-1" id="select-choice-1">
+                <option value="standard">Standard: 7 day</option>
+                <option value="rush">Rush: 3 days</option>
+                <option value="express">Express: next day</option>
+                <option value="overnight">Overnight</option>
+            </select>
+        </li>
+        <li class="ui-body ui-body-b">
+            <fieldset class="ui-grid-a">
+                    <div class="ui-block-a"><button type="submit" class="ui-btn ui-corner-all ui-btn-a">Cancel</button></div>
+                    <div class="ui-block-b"><button type="submit" class="ui-btn ui-corner-all ui-btn-a">Submit</button></div>
+            </fieldset>
+        </li>
+    </ul>
+</form>
+	</div>
+</div>
+
+
+<div id="list7" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Theme</h1>
+<ul data-role="listview" data-inset="true" data-theme="b" data-divider-theme="a" data-count-theme="a">
+    <li data-role="list-divider">Divider</li>
+    <li><a href="index.html" data-theme="a">Inbox <span class="ui-li-count">12</span></a></li>
+    <li><a href="index.html">Outbox <span class="ui-li-count">0</span></a></li>
+    <li><a href="index.html">Sent <span class="ui-li-count">328</span></a></li>
+</ul>
+
+<ul data-role="listview" data-inset="true" data-theme="a" data-divider-theme="b" data-count-theme="b">
+    <li data-role="list-divider">Divider</li>
+    <li><a href="index.html" data-theme="b">Inbox <span class="ui-li-count">12</span></a></li>
+    <li><a href="index.html">Outbox <span class="ui-li-count">0</span></a></li>
+    <li><a href="index.html">Sent <span class="ui-li-count">328</span></a></li>
+</ul>
+	</div>
+</div>
+
+<div id="list8" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<h1 class="center">Grouped collapsible with listviews</h1>
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="b">
+    <div data-role="collapsible">
+    <h2>Filtered list</h2>
+        <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
+            <li><a href="index.html">Adam Kinkaid</a></li>
+            <li><a href="index.html">Alex Wickerham</a></li>
+            <li><a href="index.html">Avery Johnson</a></li>
+            <li><a href="index.html">Bob Cabot</a></li>
+            <li><a href="index.html">Caleb Booth</a></li>
+        </ul>
+    </div>
+    <div data-role="collapsible">
+    <h2>Formatted text</h2>
+        <ul data-role="listview" data-theme="a" data-divider-theme="b">
+            <li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
+            <li><a href="index.html">
+                <h3>Stephen Weber</h3>
+            <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+            <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+            </a></li>
+            <li><a href="index.html">
+                <h3>jQuery Team</h3>
+            <p><strong>Boston Conference Planning</strong></p>
+            <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+                <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+            </a></li>
+        </ul>
+    </div>
+    <div data-role="collapsible">
+    <h2>Thumbnails and split button</h2>
+        <ul data-role="listview" data-split-icon="gear" data-split-theme="a">
+            <li><a href="index.html">
+                <img src="imgs/album-bb.jpg">
+                <h3>Broken Bells</h3>
+            <p>Broken Bells</p>
+                </a><a href="lists-split-purchase.html" data-rel="dialog" data-transition="slideup">Purchase album
+            </a></li>
+            <li><a href="index.html">
+                <img src="imgs/album-hc.jpg">
+                <h3>Warning</h3>
+            <p>Hot Chip</p>
+            </a><a href="lists-split-purchase.html" data-rel="dialog" data-transition="slideup">Purchase album
+            </a></li>
+            <li><a href="index.html">
+                <img src="imgs/album-p.jpg">
+                <h3>Wolfgang Amadeus Phoenix</h3>
+            <p>Phoenix</p>
+                </a><a href="lists-split-purchase.html" data-rel="dialog" data-transition="slideup">Purchase album
+            </a></li>
+        </ul>
+    </div>
+</div>
+	</div>
+</div>
+
+<div id="list9" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Filter reveal</h1>
+<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search fruits..." data-inset="true">
+    <li><a href="#">Apple</a></li>
+    <li><a href="#">Banana</a></li>
+    <li><a href="#">Cherry</a></li>
+    <li><a href="#">Cranberry</a></li>
+    <li><a href="#">Grape</a></li>
+    <li><a href="#">Orange</a></li>
+</ul>
+	</div>
+</div>
+
+
+<div id="list10" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Count bubbles</h1>
+<ul data-role="listview" data-count-theme="b" data-inset="true">
+    <li><a href="#">Inbox <span class="ui-li-count">12</span></a></li>
+    <li><a href="#">Outbox <span class="ui-li-count">0</span></a></li>
+    <li><a href="#">Drafts <span class="ui-li-count">4</span></a></li>
+    <li><a href="#">Sent <span class="ui-li-count">328</span></a></li>
+    <li><a href="#">Trash <span class="ui-li-count">62</span></a></li>
+</ul>
+	</div>
+</div>
+
+<div id="tab" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>TAB SAMPLE</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<div data-role="tabs" id="tabs">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#one" data-ajax="false">one</a></li>
+      <li><a href="#two" data-ajax="false">two</a></li>
+      <li><a href="ajax-content-ignore.html" data-ajax="false">three</a></li>
+    </ul>
+  </div>
+  <div id="one" class="ui-body-d ui-content">
+    <h1>First tab contents</h1>
+  </div>
+  <div id="two">
+    <ul data-role="listview" data-inset="true">
+        <li><a href="#">Acura</a></li>
+        <li><a href="#">Audi</a></li>
+        <li><a href="#">BMW</a></li>
+        <li><a href="#">Cadillac</a></li>
+        <li><a href="#">Ferrari</a></li>
+    </ul>
+  </div>
+</div>
+	</div>
+</div>
+
+<div id="red" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>BLUE</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+     <thead>
+       <tr>
+         <th data-priority="2">Rank</th>
+         <th>Movie Title</th>
+         <th data-priority="3">Year</th>
+         <th data-priority="1"><abbr title="Rotten Tomato Rating">Rating</abbr></th>
+         <th data-priority="5">Reviews</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <th>1</th>
+         <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Citizen Kane</a></td>
+         <td>1941</td>
+         <td>100%</td>
+         <td>74</td>
+       </tr>
+       <tr>
+         <th>2</th>
+         <td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Casablanca</a></td>
+         <td>1942</td>
+         <td>97%</td>
+         <td>64</td>
+       </tr>
+       <tr>
+         <th>3</th>
+         <td><a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">The Godfather</a></td>
+         <td>1972</td>
+         <td>97%</td>
+         <td>87</td>
+       </tr>
+       <tr>
+         <th>4</th>
+         <td><a href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" data-rel="external">Gone with the Wind</a></td>
+         <td>1939</td>
+         <td>96%</td>
+         <td>87</td>
+       </tr>
+       <tr>
+         <th>5</th>
+         <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
+         <td>1962</td>
+         <td>94%</td>
+         <td>87</td>
+       </tr>
+       <tr>
+         <th>6</th>
+         <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb</a></td>
+         <td>1964</td>
+         <td>92%</td>
+         <td>74</td>
+       </tr>
+       <tr>
+         <th>7</th>
+         <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
+         <td>1967</td>
+         <td>91%</td>
+         <td>122</td>
+       </tr>
+       <tr>
+         <th>8</th>
+         <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
+         <td>1939</td>
+         <td>90%</td>
+         <td>72</td>
+       </tr>
+       <tr>
+         <th>9</th>
+         <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
+         <td>1952</td>
+         <td>89%</td>
+         <td>85</td>
+       </tr>
+       <tr>
+         <th>10</th>
+         <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
+         <td>2010</td>
+         <td>84%</td>
+         <td>78</td>
+       </tr>
+     </tbody>
+   </table>
+	</div>
+</div>
+	
+<div id="simple" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>Simple List</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+
+	
+	
+	
+	
+	
+		<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+			<li><a href="#list6">Form</a></li>
+			<li><a href="#list8">Grouped collapsible with listviews</a></li>
+			<li><a href="#list9">Filter reveal</a></li>
+				<li><a href="#list10">Count bubbles</a></li>
+					<li><a href="#red">Text and Image Content</a></li>
+
+		</ul>
+	</div>
+</div>	
+	
+	
+<div id="mapScreen" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<h2 class="center">OMTAMIL DOTCOM</h2>
+		<p class="center">No. 16, Jln SL9/9A, Palm Walk, Bandar Sg Long ,<br>43200 Selangor MALAYSIA</p>
+
+		<p class="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15936.71331928049!2d101.79669249999999!3d3.0468525000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3367e9ed6c9f%3A0x38d1b5e827f2b4cf!2sJalan+SL+9%2F9a%2C+Bandar+Sungai+Long%2C+43000+Kajang%2C+Selangor!5e0!3m2!1sta!2smy!4v1426691527742" width="600" height="450" frameborder="0" style="border:0"></iframe></p>
+
+	</div>
+</div>
+
+
+
+
+<div id="aboutScreen" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<h2 class="center">OMTAMIL DOTCOM (002135971-U)</h2>
+		
+		<img src="imgs/omtamil.tv logo.png" />
+	
+OMTAMIL.TV offers informational programs, educational series, inspiring talks from events, exclusive interviews, thought-provoking short films and documentaries in Tamil. We provide viewers throughout the globe to raise their knowledge on language, community and culture that strives to nurture and embrace Tamil way of life.
+<br>
+<p>OMTAMIL DOTCOM, is a registered enterprise in Malaysia since 2012. We conduct a wide range of courses, seminars, workshops and it solutions to schools, institutes, colleges, universities, educators, businesses, organizations, and individuals in both tamil and english on Mobile Apps, E-Learning, Web tools, Social Media, Multimedia, E-Commerce and Open Source.
+
+</p>
+	</div>
+</div>
+	<!--
+	Admission
+	Directions
+	Parking
+	Hours
+	Volunteer
+	-->
+	
+	
+	<!-- Beginning of References -->
+  <div data-role="page" id="references">
+   <div data-role="header" data-theme="e">
+    <a href="#mainindex" data-role="back" data-icon="back" title="Back">முகப்பு</a>
+    <h1>மேற்கோள்கள்</h1>
+    <a data-iconpos="notext" href="#mypanel" data-role="button" data-icon="flat-menu"></a>
+   </div>
+   <div data-role="content" data-theme="h">
+    <ul data-role="listview" data-inset="true">
+     <small>
+      <ol data-role="listview">
+       <li>திருக்குறள். வாழ்வியல் உரை - தமிழ்மண் பதிப்பகம்</li>
+       <li>திருக்குறள், அறிவியல் அகலவுரை - தமிழ்க்குரல் பதிப்பகம்</li>
+       <li>திருக்குறள். தெளிவுரை (பதவுரைப் பதிப்பு) - வானதி பதிப்பகம்</li>
+       <li>திருக்குறள். தமிழ்மரபுரை - நேசமணி பதிப்பகம்</li>
+       <li>திருக்குறள், பொருளுரை - உமா பதிப்பகம் ISBN 967-434-021-6</li>
+       <li>திருக்குறள், உட்பொருள் விளக்கம் - வேதாத்திரி பதிப்பகம்</li>
+       <li>கேள்வி பதில் வடிவில் திருக்குறளின் சாரம் - மணிமேகலைப் பிரசுரம்</li>
+       <li>திருக்குறள் - வனிதா பதிப்பகம்</li>
+       <li>திருக்குறள். தெளிவுரை - தமிழ் நிலையம்</li>
+       <li>குறள்திறன் - http://kuralthiran.com</li>
+       <li>குறள்அமுதம் - http://kuralamutham.blogspot.com</li>
+       <li>திருக்குறள் விக்கிமூலம் - http://ta.wikisource.org/wiki/திருக்குறள்</li>
+      </ol>
+     </small>
+    </ul>
+   </div>
+  </div>
+  <!-- End of References -->
+	
+	
+	
+	
+</body>
+</html>
